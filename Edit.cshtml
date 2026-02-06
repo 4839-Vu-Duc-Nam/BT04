@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+@model BT04.Models.Todo
+}
+
+<h2>Sửa công việc</h2>
+
+<form asp-action="Edit">
+    Mã: <input asp-for="Id" readonly /> <br /><br />
+    Tên: <input asp-for="Name" /> <br /><br />
+    Hoàn thành: <input asp-for="IsCompleted" /> <br /><br />
+
+    <button type="submit">Cập nhật</button>
+</form>
+
+<a asp-action="Index">⬅ Quay lại</a>
+
